@@ -83,3 +83,81 @@ Where `YWxlcnQoMSk7` is `alert(1);`.
   
 Or you can use `eval("al"+"ert(1)")`, thanks pal!
 
+
+## Crypto - Intercepted message (90 coins)
+Resolver in Powershell, each character is shifted based on his position, with an overflow when needed
+```
+function Convert-String {
+    param (
+        [string]$inputString
+    )
+    
+    $outputString = ""
+
+    for ($i = 0; $i -lt $inputString.Length; $i++) {
+        $char = $inputString[$i]
+        $asciiValue = [int][char]$char
+        $newAsciiValue = $asciiValue - $i
+        if ($newAsciiValue -lt 33) {
+            $newAsciiValue += 95;
+        }
+        $newChar = [char]$newAsciiValue
+        $outputString += $newChar
+        Write-Host "--------------"
+        Write-Host $char
+        Write-Host $asciiValue
+        Write-Host $newAsciiValue
+        Write-Host $newChar
+    }
+    return $outputString
+}
+
+# Input string
+$inputString = 'NUTOKH"Jin}l~`o{qu&Y$([.},4++#<'
+
+# Call the function and store the result
+$result = Convert-String -inputString $inputString
+
+# Output the result
+Write-Host "Original string: $inputString"
+Write-Host "Transformed string: $result"
+```
+
+
+## Crypto - Space (90 coins)
+Bruteforced:
+```
+#!/usr/bin/env python3
+import hashlib
+import argparse
+
+ct = "w2a\x7fq'I\tUOLV\\UOQR\\L\x07R\x1c\x12\x07\x04X\x14HRD\x12H"
+
+def md5(msg:str)->str:
+    return hashlib.md5(msg.encode()).hexdigest()
+
+def xor(data:str,key:str):    
+    return ''.join(chr(ord(a) ^ ord(b)) for a,b in zip(data, key))
+
+def main():
+    year = 2023
+    month = 1
+    day = 1
+    while (True):
+        key = f"{year:04}-{month:02}-{day:02}"
+        hkey = md5(key)
+        result = xor(ct, hkey)
+        if (result.startswith('NTRLGC')):
+            print(result)
+        day += 1
+        if (day > 31):
+            day = 1
+            month +=1
+            if(month > 12):
+                month = 1
+                year -= 1
+
+if __name__ == "__main__":
+    main()
+```
+
