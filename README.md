@@ -86,6 +86,21 @@ Or you can use `eval("al"+"ert(1)")`, thanks pal!
 Open with Wireshark, tools -> credentials, click on the packet, look inside the http and Wireshark automatically will convert the auth bearer to plaintext:
 ![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/11a6c6a6-f99e-419e-a0f9-75564f469f5c)
 
+## Reversing - PWNVOYAGE-LEVEL0 (40 coins)
+Bruteforce with some intuition. The code was "TOOYOUNGTODIEBRO", and it return PRLG{HURT_M3_PL3NTY}
+
+## Reversing - PWNVOYAGE-LEVEL1 (90 coins)
+Follow the instruction for the file, analyzing the assembly the password is U_R_MY_H3RO, solution NTRLGC{TH1SH1LLSM3LLSL1K3V1CT0RY}.
+
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/1120c293-8dda-445c-805f-7d55cbb07012)
+
+## Reversing - PWNVOYAGE-LEVEL2 (110 coins)
+Follow the instruction for the file, patched the assembly, address 00101764 changed from JZ to JNZ.
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/5a1df428-719c-4477-ae89-de6dd7e7ec89)
+
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/ea3d815a-7a46-44ca-a1b3-1e427517a326)
+
+
 
 ## Crypto - Intercepted message (90 coins)
 Resolver in Powershell, each character is shifted based on his position, with an overflow when needed
