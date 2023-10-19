@@ -82,6 +82,9 @@ eval(atob('YWxlcnQoMSk7'));
 Where `YWxlcnQoMSk7` is `alert(1);`.  
   
 Or you can use `eval("al"+"ert(1)")`, thanks pal!
+## Forensics - Bad request-1
+Open with Wireshark, tools -> credentials, click on the packet, look inside the http and Wireshark automatically will convert the auth bearer to plaintext:
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/11a6c6a6-f99e-419e-a0f9-75564f469f5c)
 
 
 ## Crypto - Intercepted message (90 coins)
