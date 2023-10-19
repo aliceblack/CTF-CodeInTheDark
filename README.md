@@ -2,7 +2,7 @@
 Interlogica CTF Code in the dark:
 [https://ctf.codeinthedark.dev/challenges](https://ctf.codeinthedark.dev/challenges)
 
-## 1 
+## 1 - eXSStravaganza-1
 
 Trigger an alert(1) in the small browser by evading the sanitizer's countermeasures. NOTE: the alert must be triggerable offline and without any further actions by the user.
 The page has an input and renders the input after running a function on your code.
@@ -27,7 +27,7 @@ Solution:
 </script>
 ```
 
-## 2
+## 2 - eXSStravaganza-2
 
 The page has an input and renders the input after running a function on your code.
 ```
@@ -47,14 +47,14 @@ Solution:
 
 Thanks M9k!
 
-## 3
+## 3 - Unbreakable secret
 Just call the function from console.
 
-## 4
+## 4 - The Bl0g
 Register. Password of moderator is in the user profile image. Get sources as moderator. Sources show that registratin take role too. Register as admin. As admin go to admin page and see flag.
 
 
-## 5
+## 5 - eXSStravaganza-3
 
 The page has an input and renders the input after running a function on your code.
 ```
