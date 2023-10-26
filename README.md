@@ -178,4 +178,8 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+## STEGO - GIFted
+Divide the gif in frames and you can read the flag: `NTRLGC{THERARESTPEPEOFTHEMALL}`.
 
+## STEGO - Unpleasant Challenge
+The not colorblind-safe image contains the flag: `NTRLGC{1T5N0TFUNNY4T4LL}`.
