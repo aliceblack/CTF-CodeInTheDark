@@ -178,8 +178,15 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-## STEGO - GIFted
+## STEGO - GIFted (40 coins)
 Divide the gif in frames and you can read the flag: `NTRLGC{THERARESTPEPEOFTHEMALL}`.
 
-## STEGO - Unpleasant Challenge
+## STEGO - Unpleasant Challenge (40 coins)
 The not colorblind-safe image contains the flag: `NTRLGC{1T5N0TFUNNY4T4LL}`.
+
+## STEGO - Blue! (40 coins)
+The image is not just a single color, open it with Paint and use the bucket:
+
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/e1c6b36f-bc46-4aaa-a0ff-59f1ba50cde3)
+
+![immagine](https://github.com/aliceblack/CTF-CodeInTheDark/assets/9288402/c824c40c-9224-4331-a9be-76a985c53f14)
